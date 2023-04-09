@@ -21,15 +21,24 @@ To traverse between the levels of the game, a 2D overworld will be used. This re
 - Each power up will be useful in picking up a certain type of trash. 
 - At the end, all of these powers will be useful in defeating the final boss. 
 
-##Character
+## Character
+
 Ozon will be a round character that has two eyes indicating the direction of fire and movement. Ozon will be able to be customized by its color, shoes and head accessories. As Ozon cleans the planet it will be visible that his efforts are making a difference as the environment will begin to look better.
 
-##Enemies
+## Enemies
+
 - There will be multiple enemies with different levels of abilities. 
 - Basic enemies will have basic movement. 
 - More advanced enemies will have attack patterns and character tracking
-##Map
+## Map
+
 - The map will consist of a home base of operations where Ozon has landed. From this “Home” Ozon will be able to travel from different paths into the different levels. 
 - Ozon will also have levels which will improve his stats as the game progresses. 
 - The overworld map is populated by non-playable characters (NPCs) with limited interactive capabilities, whom Ozone may engage with. These NPCs were originally dispatched to perform a cleanup of the planet, but their efforts proved largely ineffective, resulting in their aimless wanderings and the collection of scant
+- 
+## Level Maker
+
+-In addition to playing through the pre-designed levels in Ozon, players will also have the ability to create their own levels using the level maker feature.
+-The level maker will allow players to design their own levels by selecting and placing various platforms, enemies, and bosses. This feature will give players the opportunity to flex their creativity and design skills while challenging themselves and others with their custom levels.
+-Once a player has finished designing their level, they will be able to save it and play it, as well as share it with others to try out. This feature adds a lot of replay value to the game as players will be able to create and play through an endless amount of custom levels.
 
