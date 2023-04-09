@@ -1,0 +1,3 @@
+59 3 enemyMove
+75 3 enemyMove
+67 3 enemyStill

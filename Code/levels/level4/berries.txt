@@ -1,0 +1,7 @@
+36 15 full Code/Assets/ozoBerry1.png
+39 12 full Code/Assets/ozoBerry1.png
+24 8 part Code/Assets/ozoBerry2.png
+133 17 full Code/Assets/ozoBerry1.png
+133 17 full Code/Assets/ozoBerry1.png
+131 15 full Code/Assets/ozoBerry1.png
+111 10 part Code/Assets/ozoBerry2.png

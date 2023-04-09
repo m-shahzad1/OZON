@@ -1,0 +1,6 @@
+14 8 enemyMove
+34 14 enemyStill
+55 9 enemyStill
+81 7 enemyMove
+93 4 enemyStill
+156 4 enemyStill

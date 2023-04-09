@@ -1,0 +1,2 @@
+0 0 43 2 normal Code/sprites/levels/level1/ground.png
+49 0 86 2 normal Code/sprites/levels/level1/ground.png

@@ -1,0 +1,3 @@
+0 0 43 2 normal Code/sprites/levels/level1/ground.png
+44 0 79 6 normal Code/sprites/levels/level1/stone.png
+89 2 103 2 normal Code/sprites/levels/level1/toxic.png

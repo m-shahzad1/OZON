@@ -1,0 +1,4 @@
+0 0 43 2 normal Code/sprites/levels/level1/brown.png
+0 3 2 16 normal Code/sprites/levels/level1/brown.png
+0 17 43 19 normal Code/sprites/levels/level1/brown.png
+41 3 43 16 normal Code/sprites/levels/level1/brown.png

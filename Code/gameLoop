@@ -1,0 +1,82 @@
+import pygame,time
+
+from runnables.map import Map
+from runnables.level import Level
+from runnables.sequences import Seq 
+from runnables.maker import Maker
+from gameData import size
+from runnables.home import Home
+from runnables.level import Level
+from startingMenu import Menu
+# This has one instance and runs the entire game
+
+class Game:
+    FPS = 60
+    def __init__(self):
+        self.enterMap()
+
+    def enter_start_sequence(self):
+        self.start_sequence = Seq(screen,'start',self.enterMap)
+        self.state = 'start_sequence'
+
+    def enter_exit_sequence(self):        
+        self.exit_sequence = Seq(screen,'exit',self.enterMap)
+        self.state = 'exit_sequence'
+
+    # This will be the method called from other classes to get to different levels
+    def enterLevel(self,level):
+        self.level = Level(screen,level,self.enterMap)
+        self.state = 'level'
+
+    # This will be the method called from other classes to get back to 
+    # the map, and make changes to the Map itself in the constructor
+    def enterMap(self):
+        self.map = Map(screen,self.enterLevel,self.enterHome,self.enterMaker)
+        self.state = 'map'
+
+    def enterMenu(self):
+        self.menu = Menu(screen,self.enter_start_sequence)
+        self.state = 'menu'
+
+    def enterMaker(self):
+        self.maker = Maker(screen,1,self.enterMap)
+        self.state = 'maker'
+    # This will be the method called from other classes to get to the home level screen 
+    def enterHome(self):
+        self.house = Home(screen,self.enterMap)
+        self.state = 'home'
+        
+    def run(self): 
+        if self.state == 'start_sequence':
+            self.start_sequence.run()
+        elif self.state == 'exit_sequence':
+            self.exit_sequence.run()
+        elif self.state == 'map':
+            self.map.run()
+        elif self.state == 'level':
+            self.level.run()
+        elif self.state == 'maker':
+            self.maker.run()   
+        elif self.state == 'home':
+            self.house.run()
+        elif self.state == 'menu':
+            self.menu.run()
+            
+pygame.init()
+
+# init
+screen = pygame.display.set_mode(size)
+
+game = Game()
+
+while(True):
+    for event in pygame.event.get():
+        if event.type==pygame.QUIT:
+            pygame.quit()
+    screen.fill('black')
+
+    game.run()
+
+    pygame.display.flip()
+
+    pygame.display.update()

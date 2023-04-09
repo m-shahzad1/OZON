@@ -1,0 +1,4 @@
+1 1 11 2 normal Code/sprites/levels/level1/ground.png
+22 1 30 2 normal Code/sprites/levels/level1/ground.png
+46 1 55 2 normal Code/sprites/levels/level1/ground.png
+67 1 76 2 normal Code/sprites/levels/level1/ground.png
